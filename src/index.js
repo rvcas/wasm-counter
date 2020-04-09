@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {render} from "react-dom";
-import {add} from '../wasm/add.wasm';
+import {add, fib} from '../wasm/lib.wasm';
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -16,7 +16,7 @@ const Counter = () => {
 
   return (
     <div>
-      {count}
+      fib({count}) = {fib(count)}
     </div>
   );
 }

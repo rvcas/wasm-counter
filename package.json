@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn build:zig && parcel src/index.html",
-    "build:zig": "zig build-lib src/*.zig -target wasm32-freestanding --output-dir wasm/",
+    "build:zig": "zig build-lib src/lib.zig -target wasm32-freestanding --output-dir wasm/",
     "build": "yarn build:zig && parcel build src/index.html"
   },
   "devDependencies": {
