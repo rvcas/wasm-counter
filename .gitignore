@@ -1,0 +1,6 @@
+.cache/
+add.h
+add.o
+add.wasm
+dist/
+node_modules/
