@@ -13,6 +13,12 @@ const Counter = () => {
     return () => clearInterval(interval);
   }, [setCount]);
 
+  useEffect(() => {
+    if (count >= 46) {
+      setCount(0);
+    }
+  }, [count, setCount])
+
 
   return (
     <div>
