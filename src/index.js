@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {render} from "react-dom";
-import {add} from './add.wasm';
+import {add} from '../wasm/add.wasm';
 
 const Counter = () => {
   const [count, setCount] = useState(0);

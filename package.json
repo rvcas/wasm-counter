@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "yarn build:zig && parcel index.html",
-    "build:zig": "zig build-lib add.zig -target wasm32-freestanding",
-    "build": "yarn build:zig && parcel build index.html"
+    "start": "yarn build:zig && parcel src/index.html",
+    "build:zig": "zig build-lib src/*.zig -target wasm32-freestanding --output-dir wasm/",
+    "build": "yarn build:zig && parcel build src/index.html"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
